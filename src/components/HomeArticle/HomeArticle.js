@@ -16,8 +16,8 @@ class HomeArticle extends React.Component {
                 <section className="article__pic-column">
                     <img src={pic} width="100%"/>
                     <p className="ref-text">
-                        <a className="link-text" href="https://www.instagram.com/kamweiatwork/">Kamwei Fong</a> 
-                         — The Furry Thing Series. Kitty No.8, 2018
+                        {[ <a className="link-text" href="https://www.instagram.com/kamweiatwork/">Kamwei Fong</a>,
+                        " — The Furry Thing Series. Kitty No.8, 2018" ]}
                     </p>
                 </section>
                 <section className="article__text-column">

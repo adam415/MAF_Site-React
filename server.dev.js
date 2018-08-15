@@ -16,6 +16,10 @@ app.use(webpackHotMiddleware(compiler, {
     log: console.log
 }));
 
+app.get('/*', (req, res) => {
+    res.send('index');
+});
+
 app.listen(port, () => {
     console.log(`Server has been started on port ${port}`);
 });

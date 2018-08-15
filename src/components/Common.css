@@ -60,17 +60,3 @@
     color: #A00000;
 }
 
-
-/* Footer */
-.foot-bar {
-    background-color: dimgray;
-    text-align: center;
-    padding: 10px;
-}
-
-.foot-bar__text {
-    color: white;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1em;
-}

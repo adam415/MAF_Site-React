@@ -10,7 +10,7 @@ app.use(
     bodyParser()
 );
 
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
     res.send('index');
 });
 
