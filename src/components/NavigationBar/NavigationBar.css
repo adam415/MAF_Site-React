@@ -1,0 +1,51 @@
+/* Responsive Layout */
+@media screen and (max-width: 700px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    background-color: #252525;
+}
+
+.nav-bar__item {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+
+    .nav-bar__item:hover {
+        background-color: #DDDDDD;
+        color: black;
+    }
+
+    .nav-bar__item:active {
+        background-color: #808080;
+        color: black;
+    }
+
+.nav-bar__item_current {
+    background-color: #A00000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+
+    .nav-bar__item_current:hover {
+        background-color: #DDDDDD;
+        color: #A00000;
+    }
+
+    .nav-bar__item_current:active {
+        background-color: #808080;
+        color: black;
+    }

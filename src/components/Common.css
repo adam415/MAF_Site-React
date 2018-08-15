@@ -1,0 +1,76 @@
+/* Remove Margin */
+.margin_no {
+    margin: 0;
+}
+
+/* The color of the picture's background */
+.body_background_like-picture {
+    background-color: rgb(244, 240, 237);
+}
+
+/* Headers */
+
+.block__header {
+    text-align: center;
+    color: #800000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    margin: 0px 0px 50px 0px;
+}
+
+/* Paragraphs */
+.main-text {
+    color: dimgray;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+}
+
+.ref-text {
+    color: dimgray;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+
+.input-box {
+    font-size: 1.4em;
+}
+
+.form__button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin: 2em 0em 2em 0em;
+}
+
+/* Link Buttons */
+.link-text {
+    color: #A00000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link-text:hover {
+    color: #FF0000;
+}
+
+.link-text:active {
+    color: #A00000;
+}
+
+
+/* Footer */
+.foot-bar {
+    background-color: dimgray;
+    text-align: center;
+    padding: 10px;
+}
+
+.foot-bar__text {
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}

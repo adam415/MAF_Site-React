@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import PagePresenter from './components/PagePresenter/PagePresenter';
+
 import './index.css';
 
-const title = 'hi';
-
 ReactDOM.render(
-<div>{title}</div>,
-document.getElementById('root')
+    <PagePresenter/>,
+
+    document.getElementById('content')
 );
 
 module.hot.accept(); // hot reloading for dev

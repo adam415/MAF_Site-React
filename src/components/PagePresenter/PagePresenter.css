@@ -1,0 +1,10 @@
+.page__main-header {
+    background-color: #600000;
+    text-align: center;
+    color: white;
+    padding: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 4em;
+}
+
