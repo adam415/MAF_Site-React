@@ -34,6 +34,10 @@
     font-size: 1em;
 }
 
+.text-align_left {
+    text-align: left;
+}
+
 
 .input-box {
     font-size: 1.4em;

@@ -1,0 +1,45 @@
+.table-section {
+    text-align: center;
+    margin: 100px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.width_70per {
+    width: 70%;
+}
+
+/* Table Borders */
+.table, .table th, .table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Table Paddings */
+.table th, .table td {
+    padding: 4px;
+}
+
+/* Table Headers */
+.table th {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    color: #800000;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Table Cells */
+.table td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+}
+
+/* Table Links */
+.table__link-text {
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

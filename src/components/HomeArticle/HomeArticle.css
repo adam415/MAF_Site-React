@@ -1,11 +1,11 @@
 @media screen and (max-width: 700px) {
-    .article {
+    .home-article {
         flex-direction: column-reverse;
     }
 }
 
 /* Main Content */
-.article {
+.home-article {
     display: flex;
 }
 

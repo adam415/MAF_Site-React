@@ -12,7 +12,7 @@ class HomeArticle extends React.Component {
 
     render() {
         return (
-            <article className="article">
+            <article className="home-article">
                 <section className="article__pic-column">
                     <img src={pic} width="100%"/>
                     <p className="ref-text">
