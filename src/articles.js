@@ -4,8 +4,12 @@ import FormArticle  from './components/FormArticle/FormArticle';
 import AboutArticle from './components/AboutArticle/AboutArticle';
 
 export default [
-    { header: "Welcome MAF",    nav: "Home",    link: "/",       requireExact: true,    component: HomeArticle  },
-    { header: "MAF Table",      nav: "Table",   link: "/table",  requireExact: true,    component: TableArticle },
-    { header: "MAF Form",       nav: "Form",    link: "/form",   requireExact: true,    component: FormArticle  },
-    { header: "About MAF",      nav: "About",   link: "/about",  requireExact: true,    component: AboutArticle }
+    /*        Заголовок страницы      NavBarItem          Компонент            Exact?       Путь     */
+    { header: "Welcome MAF",     nav: "Home",  component: HomeArticle,  exact: true,  link: "/"      },
+    { header: "MAF Table",       nav: "Table", component: TableArticle, exact: true,  link: "/table" },
+    { header: "Submit MAF User", nav: "Form",  component: FormArticle,  exact: true,  link: "/form"  },
+    { header: "About MAF",       nav: "About", component: AboutArticle, exact: true,  link: "/about" },
+    
+    /*        Заголовок страницы    No Item          Компонент           Exact?      Путь          Запросы   */
+    { header: "Edit MAF User", nav: null, component: FormArticle, exact: true, link: "/form", req: "/:userId" }
 ];

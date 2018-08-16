@@ -10,6 +10,8 @@ class NavigationBar extends React.Component {
     render() {
         let links = [];
         Articles.forEach(article => {
+            if (article.nav == null) return;
+            
             let linkClass = this.props.current === article.link
                 ? "nav-bar__item_current" : "nav-bar__item";
 

@@ -9,15 +9,22 @@ import Articles from './articles';
 import Presenter from './components/Presenter';
 
 let routes = [];
-Articles.forEach(article => routes.push(
-    <Route path={article.link} exact={article.requireExact}
-        component={() => <Presenter
-            header={article.header}
-            current={article.link}
-            component={article.component}
-        />}
-    />
-));
+Articles.forEach(article => {
+    let path = article.link;
+    if (article.req != undefined) path += article.req;
+
+    routes.push(
+        <Route path={path} exact={article.exact}
+            component={(props) =>
+                <Presenter
+                    header={article.header}
+                    current={article.link}
+                    component={article.component}
+                    componentProps={props}
+                />}
+        />
+    );
+});
 
 ReactDOM.render(
     <BrowserRouter>

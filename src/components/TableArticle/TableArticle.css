@@ -39,7 +39,17 @@
 /* Table Links */
 .table__link-text {
     font-size: 0.8em;
+    padding: 4px;
+}
+
+.options-block {
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .options-block {
+        flex-direction: column;
+    }
 }

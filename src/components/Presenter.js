@@ -10,7 +10,7 @@ class Presenter extends React.Component {
             <section>
                 <Header title={this.props.header}/>
                 <NavigationBar current={this.props.current}/>
-                {React.createElement(this.props.component)}
+                {React.createElement(this.props.component, this.props.componentProps)}
                 <FootBar/>
             </section>
         );
