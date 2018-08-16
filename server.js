@@ -10,7 +10,8 @@ app.use(
     bodyParser()
 );
 
-app.get('/*', (req, res) => {
+app.get('/', (req, res) => {
+    // res.sendFile('index.html', { root: __dirname + '/dist/' });
     res.send('index');
 });
 

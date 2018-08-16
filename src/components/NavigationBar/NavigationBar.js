@@ -1,24 +1,25 @@
 import React from 'react';
-
-// import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '../Common.css';
 import './NavigationBar.css';
 
+import Articles from '../../articles';
+
 class NavigationBar extends React.Component {
     render() {
-        let navItems = [];
+        let links = [];
+        Articles.forEach(article => {
+            let linkClass = this.props.current === article.link
+                ? "nav-bar__item_current" : "nav-bar__item";
 
-        this.props.links.forEach(item => {
-            let itemClass = this.props.current === item.link ?
-                "nav-bar__item_current" : "nav-bar__item";
-            let navItem = <a className={itemClass} href={item.link}>{item.nav}</a>;
-
-            navItems.push(navItem);
+            links.push(<Link className={linkClass} to={article.link}>{article.nav}</Link>);
         });
 
         return (
-            <section className="nav-bar">{navItems}</section>
+            <section className="nav-bar">
+                {links}
+            </section>
         );
     }
 }

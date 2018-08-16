@@ -41,6 +41,15 @@ module.exports = {
             template: 'src/index.html'
         })
     ],
+    devServer: {
+        contentBase: 'app/ui/www',
+        devtool: 'eval',
+        hot: true,
+        inline: true,
+        port: port,
+        // outputPath: buildPath,
+        historyApiFallback: true,
+    },
     output: {
         path: __dirname + '/dist',
         publicPath: '/',
